@@ -1,18 +1,21 @@
-
-// function testThumb(){
-//   for(let i =0; i < 5; i++){
-//      console.log(i);
-//   }   
-// }
-
-// testThumb();
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// console.log(fruits[3].toString());
+const nemo = ['nemo'];
+const everyone = ['dory', 'bruce', 'gill', 'hank'];
 
 const findNemo = array => {
   array.forEach(fish => {
-    if(fish === 'nemo' {
-      console.log('Found Nemo!')
-    })
+    if(fish === 'nemo') {
+      console.log('found Nemo!');
+    }
   })
 }
+
+const findNemo2 = array => {
+ for (let fish of array) {
+    if(fish === 'nemo') {
+      console.log('found Nemo!');
+    }
+  }
+}
+
+findNemo(everyone);
+findNemo2(everyone);
