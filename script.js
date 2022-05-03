@@ -1,21 +1,25 @@
 const nemo = ['nemo'];
-const everyone = ['dory', 'bruce', 'gill', 'hank'];
+const everyone = ['dory', 'bruce', 'nemo', 'gill', 'hank'];
 
 const findNemo = array => {
   array.forEach(fish => {
     if(fish === 'nemo') {
-      console.log('found Nemo!');
+      console.log('Found Nemo!');
+    } else {
+      console.log('No Nemo');
     }
   })
 }
 
-const findNemo2 = array => {
+const findPaul = array => {
  for (let fish of array) {
-    if(fish === 'nemo') {
-      console.log('found Nemo!');
+    if(fish === 'paul') {
+      console.log('found Paul!');
+    }  else {
+      console.log('No Paul');
     }
   }
 }
 
 findNemo(everyone);
-findNemo2(everyone);
+findPaul(everyone);
